@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	text := "Я люблю Мтуси Я люблю квас Я люблю золото"
+	text := "Я люблю Мтуси Я люблю книги Я люблю золото"
 
 	words := strings.Fields(text)
 

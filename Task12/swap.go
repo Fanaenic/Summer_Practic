@@ -11,8 +11,8 @@ func swap(a, b *int) {
 }
 
 func main() {
-	x := 10
-	y := 20
+	x := 33
+	y := 44
 
 	fmt.Printf("До изменений: x=%d, y=%d\n", x, y)
 	swap(&x, &y)

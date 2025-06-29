@@ -19,9 +19,9 @@ func (acc *BankAccount) Withdraw(amount float64) (float64, bool) {
 }
 
 func main() {
-	account := BankAccount{Balance: 1000}
+	account := BankAccount{Balance: 100000}
 
-	account.Deposit(500)
+	account.Deposit(50000)
 	fmt.Println("Баланс после пополнения:", account.Balance)
 
 	// Снятие

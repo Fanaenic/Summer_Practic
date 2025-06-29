@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-// Функция для поиска самой длинной строки
 func FindLongestString(strings ...string) string {
 	if len(strings) == 0 {
 		return ""
@@ -21,8 +20,8 @@ func FindLongestString(strings ...string) string {
 
 func main() {
 	// Примеры использования
-	fmt.Println(FindLongestString("cat", "dog", "elephant"))
-	fmt.Println(FindLongestString("apple", "banana", "pear"))
-	fmt.Println(FindLongestString("one"))
-	fmt.Println(FindLongestString("gg", "short", "very long"))
+	fmt.Println(FindLongestString("car", "fbi", "tiger"))
+	fmt.Println(FindLongestString("banana", "orange", "cherry"))
+	fmt.Println(FindLongestString("two"))
+	fmt.Println(FindLongestString("glhf", "short", "jungle"))
 }

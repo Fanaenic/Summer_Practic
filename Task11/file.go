@@ -5,7 +5,6 @@ import (
 	"sort"
 )
 
-// Поиск элемента в срезе (возвращает индекс и наличие)
 func FindElement(slice []int, target int) (int, bool) {
 	for i, v := range slice {
 		if v == target {
@@ -15,7 +14,6 @@ func FindElement(slice []int, target int) (int, bool) {
 	return -1, false
 }
 
-// Сортировка среза чисел (возрастание)
 func SortSliceAscending(slice []int) []int {
 	sorted := make([]int, len(slice))
 	copy(sorted, slice)
@@ -23,7 +21,6 @@ func SortSliceAscending(slice []int) []int {
 	return sorted
 }
 
-// Сортировка среза чисел (убывание)
 func SortSliceDescending(slice []int) []int {
 	sorted := make([]int, len(slice))
 	copy(sorted, slice)
@@ -31,7 +28,6 @@ func SortSliceDescending(slice []int) []int {
 	return sorted
 }
 
-// Фильтрация среза (возвращает элементы, удовлетворяющие условию)
 func FilterSlice(slice []int, condition func(int) bool) []int {
 	var result []int
 	for _, v := range slice {

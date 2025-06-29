@@ -2,14 +2,12 @@ package main
 
 import "fmt"
 
-// Интерфейс Transport определяет базовые методы транспорта
 type Transport interface {
-	Move()        // Движение
-	Stop()        // Остановка
-	Name() string // Название транспорта
+	Move()
+	Stop()
+	Name() string
 }
 
-// Структура Car (Автомобиль)
 type Car struct {
 	model string
 	speed int
@@ -48,7 +46,7 @@ type Train struct {
 }
 
 func (t Train) Move() {
-	fmt.Printf("Поезд №%d отправляется\n", t.number)
+	fmt.Printf("Поезд №%d отправляется в путь\n", t.number)
 }
 
 func (t Train) Stop() {
@@ -60,19 +58,20 @@ func (t Train) Name() string {
 }
 
 func testTransport(t Transport) {
-	fmt.Println("\nТестируем:", t.Name())
+	fmt.Println("\nЗапускаем:", t.Name())
 	t.Move()
 	t.Stop()
 }
 
 func main() {
 	vehicles := []Transport{
-		Car{"Toyota Camry", 60},
-		Bicycle{"Stels"},
-		Train{1024},
+		Car{"Жигули", 160},
+		Bicycle{"Велосипед"},
+		Train{3666},
 	}
 
 	for _, vehicle := range vehicles {
 		testTransport(vehicle)
 	}
 }
+А
